@@ -14,13 +14,12 @@ jobs:
       group: build-v8-${{ github.ref }}
       cancel-in-progress: true
     steps:
-      - name: Checkout Git repository
+      - name: Check out
         uses: actions/checkout@v3
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
         with:
-          node-version: 16
+          path: 'reanimated_repo'
+      - name: Create React Native app
+        run: npx react-native init app --version "0.71.6"
 
-      - name: Validate config
-        run: npx react-native@latest init AwesomeProject
+      - name: eee
+        run: npx react-native init AwesomeProject
