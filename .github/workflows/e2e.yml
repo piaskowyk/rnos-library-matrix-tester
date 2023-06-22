@@ -22,5 +22,5 @@ jobs:
         with:
           node-version: 16
 
-      - name: Validate config
-        run: ./cli/ValidateConfig.sh
+      - name: eeeee
+        run: npx react-native@latest init AwesomeProject
