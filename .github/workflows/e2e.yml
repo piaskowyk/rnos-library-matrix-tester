@@ -10,9 +10,9 @@ on:
 jobs:
   E2E:
     runs-on: ubuntu-latest
-    timeout-minutes: 90
-    strategy:
-      fail-fast: false
+    concurrency:
+      group: build-v8-${{ github.ref }}
+      cancel-in-progress: true
     steps:
       - name: Checkout Git repository
         uses: actions/checkout@v3
