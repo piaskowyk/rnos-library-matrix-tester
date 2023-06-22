@@ -23,4 +23,4 @@ jobs:
           node-version: 16
 
       - name: eeeee
-        run: npx react-native@latest init AwesomeProject
+        run: npx react-native init AwesomeProject
