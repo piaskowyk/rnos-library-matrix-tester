@@ -4,7 +4,7 @@ on:
     inputs:
       platform:
         required: true
-        type: array
+        type: string
       runner:
         required: true
         type: string
