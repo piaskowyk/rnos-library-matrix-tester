@@ -12,12 +12,12 @@ jobs:
     name: Run tests for Android
     uses: ./.github/workflows/e2e-action.yml
     with:
-      platform: ['Android']
+      platform: Android
       runner: ubuntu-latest
 
   build_ios:
     name: Run tests for iOS
     uses: ./.github/workflows/e2e-action.yml
     with:
-      platform: ['iOS']
+      platform: iOS
       runner: macos-12
