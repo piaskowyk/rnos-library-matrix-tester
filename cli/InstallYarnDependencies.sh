@@ -6,10 +6,10 @@ cd $E2E_APP_PATH
 
 # install SWM libraries
 yarn add \
-    react-native-reanimated@3.0.0-rc.10 \
-    react-native-gesture-handler@2.9.0 \
-    yarn add react-native-screens@3.19.0 \
-    yarn add react-native-svg@13.7.0
+    github:software-mansion/react-native-reanimated \
+    react-native-gesture-handler \
+    yarn add react-native-screens \
+    yarn add react-native-svg
 
 # install other libraries
 if [ $REACT_NATIVE_MINOR_VERSION -ge 65 ]; then
