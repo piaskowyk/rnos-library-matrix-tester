@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  push:
+    branches: ['main']
+  pull_request:
+    branches: ['main']
+  workflow_dispatch:
+
+jobs:
+  build_android:
+    name: Run tests for Android
+    uses: ./.github/workflows/e2e-action.yml
+    with:
+      platform: Android
+      runner: ubuntu-latest
+
+  build_ios:
+    name: Run tests for iOS
+    uses: ./.github/workflows/e2e-action.yml
+    with:
+      platform: iOS
+      runner: macos-12
